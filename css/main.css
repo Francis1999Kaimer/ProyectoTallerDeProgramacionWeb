@@ -528,7 +528,7 @@ header:hover {
     height:0;
     pointer-events: none;
     overflow: hidden;
-    transition: all .5s ease;
+ /*   transition: all .5s ease;*/
 
     display: flex;
     flex-flow: column nowrap;
