@@ -113,6 +113,7 @@ body {
 .header{
   width:100%;
   background-color: rgba(0, 0, 0, 0.2);
+  padding: 1em;
   
   display: flex;
   flex-flow: row wrap;
@@ -122,12 +123,10 @@ body {
   color:white;
   position: fixed;
   transition: background-color 0.5s ease;
-  height: auto;
+ 
 }
 
-header:hover {
-    background-color: #1C2331;
-}
+
 
 
 
@@ -144,7 +143,7 @@ header:hover {
 
 
 .header .button{
-  /* background-color: crimson; */
+
   display: none;
 }
 .header .svg{
@@ -158,23 +157,15 @@ header:hover {
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  height: 100%;
+
   
 }
 .header .li{
   margin: 0 .5em;
-  height: 100%;
+
 }
 
 
-.header .li:hover{
-  background-color: gray;
-}
-
-.header .ul .li .a{
-  height: 100%;
-  padding: 1em;
-}
 
 
 
@@ -187,7 +178,7 @@ header:hover {
     background-image: url('../img/fondo.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 8em;
+  
 }
 
 .tituloCentral{
@@ -226,11 +217,19 @@ header:hover {
     text-align: justify;
     font-size: 20px;
     color: black;
-   max-width: 1400px;
+    width: 100%;
    
 }
 
 
+
+
+.col1b{
+  text-align: center;
+  max-width: 900px;
+  margin: 0 10px;
+  flex: 1;
+}
 
 
 .botonCentral{
@@ -282,6 +281,21 @@ header:hover {
     margin-top: 50px;
 }
 
+.rowDash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.rowDash2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .col2{
     text-align: left;
     width: 50%;
@@ -308,6 +322,8 @@ header:hover {
     flex: 1;
 }
 
+
+
 .box-container{
     display: flex;
     justify-content: center;
@@ -327,7 +343,29 @@ header:hover {
     flex-direction:column;
     justify-content: space-between;
 }
+.box1{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Establece la altura de la caja al 100% del viewport height */
 
+ 
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+  height: 20%;
+ 
+ 
+
+}
+
+
+.box2{
+  height: 80%;
+  padding: 0;
+  margin: 0;
+
+}
 
 .box h3{
     font-size: 20px;
@@ -376,29 +414,7 @@ header:hover {
  
 }
 
-.box1{
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Establece la altura de la caja al 100% del viewport height */
 
-   
-    padding: 0;
-    margin: 0;
-    border: 1px solid white;
-    height: 20%;
-   
-   
-  
-}
-
-
-.box2{
-    height: 80%;
-    padding: 0;
-    margin: 0;
-  
-}
 
 
 .footer-content {
@@ -436,18 +452,10 @@ header:hover {
 
 .rowFooter {
 
-
-  
     flex-wrap: wrap;
-   
-
     display: flex;
-    
-  
     align-items: center;
     margin-top: 50px;
-
-  
     justify-content: space-around;
     align-items: flex-start;
 }
@@ -469,15 +477,6 @@ header:hover {
         margin-top: 10px;
     }
 
-
-    .rowFooter {
-
-        flex-wrap: wrap;
-        display: flex;
-        align-items: center;
-        margin-top: 50px;
-        
-    }
 
     
 
@@ -563,338 +562,136 @@ header:hover {
 
 
 .ytframe {
-  background: #1f1f1f;
-  padding-bottom: 15px;
+  background: transparent;
+ width:  600px;
+ text-align: center;
+}
+
+.ytframe iframe {
+    display: inline-block;
 }
 
 
-
-
-
-/*PARA LA PARTE DE FORMULARIO*/
-
-
-.footer-bg{
-  background-image:url(img/ImagenForm.jpg) ;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 96.1vh;   /*ESTO SIRVE MAS QUE NADA PARA ESCRIBIR ENCIMA DE LA IMAGEN*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.footer-bg-2{
-  background-image:url(img/ImagenForm.jpg) ;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 96.1vh;   /*ESTO SIRVE MAS QUE NADA PARA ESCRIBIR ENCIMA DE LA IMAGEN*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-
-}
-
-form{/*Etiqueta*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.campo-1{
-  margin-bottom: 15px;
-}
-
-.campo{
-  margin: 5px;
-  padding: 20px 12px;/*Poniendo el la altura y ancho*/
-  width: 250px;
-  background: rgb(255, 255, 255);
-  border: 1px solid #4b75e7;
-  outline: none;
-  border-radius: 10px;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-}
-
-.footer-bg h2{
-  padding-top: 4%;
-  padding-bottom: 3%;
-  font-size: 40px;
-  text-transform: uppercase;
-  color:white ;
-  font-family:fantasy;
-}
 
 
 /*NUESTROS DOCUMENTO O CURSOS*/
 
 .container-cursos{
-  padding: 100px 0;/*Aca de otra manera estoy declarando la altura con padding (inferior y superiro diciedo que sera de 100px osea toda mi clase , es decir hasta donde termine mi clase general se termina mi altura)*/
+  padding: 50px 0;
   text-align: center;
-  background:#1f1f1f;
+  background-image: url('../img/fondo.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
 }
 
 .curso-txt{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   text-align: center;
-  margin-bottom: 20px;
 }
 
 
 .curso-txt h2{
-  color:rgb(157, 166, 185);
+
+  color:white;
   font-size: 35px;
   margin-bottom: 20px;
   padding-bottom: 5px;
   text-transform: uppercase;
-  font-family:fantasy;
+
+ 
 }
 
 .curso-txt p{
   color: white;
   margin-top: 18px;
   margin-bottom: 40px;
-  font-size: 19px;
+
+ 
 }
 
 
-/*PRIMERA parte de las FILAS DE IMAGENES*/
-
 .curso-group1{
   display: flex;
-  justify-content: space-between;/*El display junto con el justify (Estan poniendo a la imagen en fila(Horizontal) )*/
-  margin-bottom: 48px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .curso1-1{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 0 calc(33.33% - 20px);
+  padding-bottom: 25px;
 }
 
-.curso1-1 img{
-  width: 200px;   /*EN LAS IMAGEN ESTABLECEMOS EL ANCHO*/
-  height: 195px;  /*EN LAS IMAGEN ESTABLECEMOS LA ALTURA */
-  border-radius: 15px;
-  margin-bottom: 25px;
+
+@media screen and (max-width: 768px) {
+  .curso1-1 {
+    flex: 0 0 calc(50% - 20px);
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .curso1-1 {
+    flex: 0 0 calc(100% - 20px);
+  }
+
+  .curso-group1{
+ 
+      justify-content: center;
+  
+  }
+  
+}
+
+
+.curso1-1 img{
+  width: 213px;   /*EN LAS IMAGEN ESTABLECEMOS EL ANCHO*/
+  height: 280px;  /*EN LAS IMAGEN ESTABLECEMOS LA ALTURA */
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+
+}
+
+
+
 
 .curso1-1 h3{
   margin-bottom: 20px;
   font-size: 22px;
-  color: rgb(157, 166, 185);
+  color: white;
 }
+
 
 .curso1-1 p{
   padding: 0 50px;
   margin-bottom: 40px;
   color: white;
+  
 }
 
 .curso1-1 a{
   
-  font-size: 15px;
-  margin: 36px;
-  margin-top: 30px;
-  margin-bottom: 12px;
-  border-radius: 5px;
-  border: 1px solid white;
-  padding: 10px 12px; 
-  color: white;
-  text-decoration: none;
-  background: rgb(74, 132, 158);
-  
+  font-size: 20px;
+    color: white;
+    padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+    border: 2px solid white; /* Grosor, estilo y color del borde */
+    border-radius: 0; /* Asegura que no haya redondeo en las esquinas */
+    background-color: transparent; /* Fondo transparente para mostrar el borde */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    outline: none; /* Elimina el contorno predeterminado al hacer clic */
+    width: 100px;
+    display: inline-block;
 }
-
-
-
-
-/*SEGUNDA parte de las FILAS DE IMAGENES*/
-
-.curso-group2{
-  display: flex;
-  justify-content: space-between;/*El display junto con el justify (Estan poniendo a la imagen en fila(Horizontal) )*/
-  margin-bottom: 48px;
-}
-
-.curso2-2{
-  text-align: center;
-}
-
-.curso2-2 img{
-  width: 200px;   /*EN LAS IMAGEN ESTABLECEMOS EL ANCHO*/
-  height: 195px;  /*EN LAS IMAGEN ESTABLECEMOS LA ALTURA */
-  border-radius: 15px;
-  margin-bottom: 25px;
-}
-
-.curso2-2 h3{
-  margin-bottom: 20px;
-  font-size: 22px;
-  color: rgb(157, 166, 185);
-}
-
-.curso2-2 p{
-  padding: 0 50px;
-  margin-bottom: 40px;
-  color: white;
-}
-
-.curso2-2 a{
-  
-  font-size: 15px;
-  margin: 36px;
-  margin-top: 30px;
-  margin-bottom: 12px;
-  border-radius: 5px;
-  border: 1px solid white;
-  padding: 10px 12px; 
-  color: white;
-  text-decoration: none;
-  background: rgb(74, 132, 158);
-  
-}
-
-
-
-/*TERCERA parte de las FILAS DE IMAGENES*/
-
-.curso-group3{
-  display: flex;
-  justify-content: space-between;/*El display junto con el justify (Estan poniendo a la imagen en fila(Horizontal) )*/
-  margin-bottom: 48px;
-}
-
-.curso3-3{
-  text-align: center;
-}
-
-.curso3-3 img{
-  width: 200px;   /*EN LAS IMAGEN ESTABLECEMOS EL ANCHO*/
-  height: 195px;  /*EN LAS IMAGEN ESTABLECEMOS LA ALTURA */
-  border-radius: 15px;
-  margin-bottom: 25px;
-}
-
-.curso3-3 h3{
-  margin-bottom: 20px;
-  font-size: 22px;
-  color: rgb(157, 166, 185);
-}
-
-.curso3-3 p{
-  padding: 0 50px;
-  margin-bottom: 40px;
-  color: white;
-}
-
-.curso3-3 a{
-  
-  font-size: 15px;
-  margin: 36px;
-  margin-top: 30px;
-  margin-bottom: 12px;
-  border-radius: 5px;
-  border: 1px solid white;
-  padding: 10px 12px; 
-  color: white;
-  text-decoration: none;
-  background: rgb(74, 132, 158);
-  
-}
-
-
-
-.multilinea {
-  margin: 5px;
-  padding: 20px 12px;/*Poniendo el la altura y ancho*/
-  width: 250px;
-  background: rgb(255, 255, 255);
-  border: 1px solid #4b75e7;
-  outline: none;
-  border-radius: 10px;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-}
-
-/*CUARTA parte de las FILAS DE IMAGENES*/
-
-.curso-group4{
-  display: flex;
-  justify-content: space-between;/*El display junto con el justify (Estan poniendo a la imagen en fila(Horizontal) )*/
-  margin-bottom: 48px;
-}
-
-.curso4-4{
-  text-align: center;
-}
-
-.curso4-4 img{
-  width: 200px;   /*EN LAS IMAGEN ESTABLECEMOS EL ANCHO*/
-  height: 195px;  /*EN LAS IMAGEN ESTABLECEMOS LA ALTURA */
-  border-radius: 15px;
-  margin-bottom: 25px;
-}
-
-.curso4-4 h3{
-  margin-bottom: 20px;
-  font-size: 22px;
-  color: rgb(157, 166, 185);
-}
-
-.curso4-4 p{
-  padding: 0 50px;
-  margin-bottom: 40px;
-  color: white;
-}
-
-.curso4-4 a{
-  
-  font-size: 15px;
-  margin: 36px;
-  margin-top: 30px;
-  margin-bottom: 12px;
-  border-radius: 5px;
-  border: 1px solid white;
-  padding: 10px 12px; 
-  color: white;
-  text-decoration: none;
-  background: rgb(74, 132, 158);
-}
-
-
-/*TABLAS EN GENERAL*/
-
-
-table{
-  margin: 33px 0;
-  width: 100%;
-  text-align: left;       /*Centramoso y esas cosas*/
-  border-collapse: collapse;
-}
-
-tr{
-  display: flex;
-  justify-content: space-between;/*Primero a la isquierda lo demas a la derecha*/
-  border-bottom: 1px solid black;/*Parte de las lineas de la tabla */
-  margin-bottom: 8px;
-}
-
-th{
-  color: black;
-  padding-bottom: 12px;
-}
-
-td{
-  color:black;
-}
-
-
 

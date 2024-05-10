@@ -3,4 +3,22 @@ table{
     width: 100%;
     text-align: left;       /*Centramoso y esas cosas*/
     border-collapse: collapse;
-}
+  }
+  
+  tr{
+    display: flex;
+    justify-content: space-between;/*Primero a la isquierda lo demas a la derecha*/
+    border-bottom: 1px solid black;/*Parte de las lineas de la tabla */
+    margin-bottom: 8px;
+  }
+  
+  th{
+    color: black;
+    padding-bottom: 12px;
+  }
+  
+  td{
+    color:black;
+  }
+  
+  
