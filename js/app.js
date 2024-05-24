@@ -24,10 +24,9 @@ window.addEventListener('resize', changeHeaderColor);
 window.onload = function() {
     var pdf = document.getElementById('pdf');
     pdf.onload = function() {
-        // PDF cargado correctamente
+        console.error("PDF cargado correctamente.");
     };
     pdf.onerror = function() {
-        // Error al cargar el PDF
         console.error("Error al cargar el PDF.");
     };
 };
