@@ -14,7 +14,7 @@ function iniciarSesion() {
     var clave = document.getElementById("clave").value;
     
     if (validarUsuario(usuario, clave)) {
-        window.location.href = "ingreso.html";
+        window.location.href = "ingreso.php";
         alert("¡Bienvenido, " + usuario + "!"); 
     } else {
         alert("Usuario o contraseña incorrectos. Por favor, inténtelo de nuevo.");
